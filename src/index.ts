@@ -1,5 +1,3 @@
-import './test';
-
 type comparatorFunction = (...args : any[]) => boolean;
 type mutFunction = (...args : any[]) => any;
 

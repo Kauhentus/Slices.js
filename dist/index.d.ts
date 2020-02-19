@@ -1,4 +1,3 @@
-import './test';
 declare type comparatorFunction = (...args: any[]) => boolean;
 declare type mutFunction = (...args: any[]) => any;
 declare class ArraySlice<T> {

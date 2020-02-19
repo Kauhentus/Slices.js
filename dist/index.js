@@ -1,5 +1,4 @@
 "use strict";
-require("./test");
 var ArraySlice = /** @class */ (function () {
     function ArraySlice(array, start, end) {
         this.array = array;
