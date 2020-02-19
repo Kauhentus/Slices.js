@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var ArraySlice = require("./index.js");
 var a = [4, 7, 3, 6, 1, 2, 8, 5];
 var b = new ArraySlice(a, 0, -2);
