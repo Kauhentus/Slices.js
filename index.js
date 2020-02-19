@@ -112,8 +112,8 @@ class ArraySlice {
 
         const outOfBoundsError = (position) => Error(`ArraySlice copyWithin ${position} index is out of bounds`);
         if(target < 0 || this.length <= target) throw outOfBoundsError("target");
-        if(start < 0 || this.start <= start) throw outOfBoundsError("starting");
-        if(end < 0 || this.end <= end) throw outOfBoundsError("ending");
+        if(start < 0 || this.length <= start) throw outOfBoundsError("starting");
+        if(end < 0 || this.length <= end) throw outOfBoundsError("ending");
         if(start > end) throw Error("ArraySlice copyWithin ending index is greater than starting index.")
 
         const loopEnd = end - start < this.length ? end - start :
@@ -121,6 +121,7 @@ class ArraySlice {
         const cachedArray = this.array.slice(0);
 
         for(let i = 0; i < loopEnd; i++){
+            if(this.start + target + i >= this.start + this.length) break;
             this.array[this.start + target + i] = cachedArray[this.start + start + i];
         }
 

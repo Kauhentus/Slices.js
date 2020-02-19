@@ -1,9 +1,9 @@
 const ArraySlice = require('./index.js');
 
-const a = [1, 2, 3, 4, 5, 6, 7];
-const b = new ArraySlice(a, 1, -3); 
+const a = [4, 7, 3, 6, 1, 2, 8, 5];
+const b = new ArraySlice(a, 0, -2); 
 
-b[2] = 3;
-console.log(b.reverse());
-console.log(b[3])
-console.log(a)
+console.log(b.sort((a, b) => a < b));
+console.log(b.sort((a, b) => a > b));
+console.log(b.sort((a, b) => a >> 1 < b))
+console.log(b.mutmap(x => x >> 1));
