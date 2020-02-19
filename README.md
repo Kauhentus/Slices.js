@@ -1,6 +1,6 @@
 # Slices.JS
 
-This NPM package aims to provide Golang-like array slices to Javascript. Array slices can be very useful when dealing with data partitioned within a flat array.
+This NPM package aims to provide Golang-like array slices to Javascript. Array slices can be very useful when dealing with data partitioned within a flat array. Typescript types supported!
 
 # Introduction
 Example, self explanatory code.
