@@ -5,6 +5,8 @@ This NPM package aims to provide Golang-like array slices to Javascript. Array s
 # Introduction
 Example, self explanatory code.
 ```js
+const ArraySlice = require('slices.js');
+
 const a = [1, 2, 3, 4, 5, 6, 7];
 const b = new ArraySlice(a, 1, -3); // negative indices supported
 // last index is -1, first index is -Array.length
